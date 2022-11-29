@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gradient.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Mainpage</title>
+</head>
+<body>
+    <header class="header">
+        <div class="hamic">
+            <img src="img/Hamburger_icon.svg.png" alt="ham1" onclick="myFunction()" id="hamicon">
+        </div>
+        <img src="img/Hamburger_icon.svg.png" alt="ham1" onclick="myFunction()" id="hamicon">
+        <div class="hat">
+            <div class="popup">
+                <div class="popuptext" id="myPopup">
+                    <a id="nav1" onclick="switchFunction()">Текст1</a>
+                    <a id="nav2">Текст2</a>
+                    <a id="nav3">Текст3</a>
+                    <a id="nav4">Текст4</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="Поиск...">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search" aria-hidden="true"></i>
+               </button>
+            </div>
+        </div>
+    </header>
+    <div class="shadow">
+        Блок для большого количества текста 
+    </div>
+    <section class="blocks">
+        <div class="block" id="block1">
+          <h3>Здесь могла быть ваша реклама</h3>
+        </div>
+        <div class="block" id="block2">
+            <h3>Здесь могла быть ваша реклама</h3>
+        </div>
+        <div class="block" id="block3">
+            <h3>Здесь могла быть ваша реклама</h3>
+        </div>
+        <div class="block" id="block4">
+            <h3>Здесь могла быть ваша реклама</h3>
+        </div>
+    </section>
+    <section class="bottom">
+        <div class="navbar">
+            <a href="#home" class="active">Главная</a>
+            <a href="#news">Новости</a>
+            <a href="#contact">Контакты</a>
+        </div>
+    </section>
+    <div class="mouse">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Simple_mouse.svg" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
