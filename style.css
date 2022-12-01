@@ -256,7 +256,34 @@ body {
     cursor: pointer;
     z-index: 1;
     overflow: visible;
+    -webkit-animation: blink-2 0.9s infinite both;
+    animation: blink-2 0.9s infinite both;
+  
 }
+
+@-webkit-keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .popup {
     position: relative;
@@ -325,32 +352,7 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: underline;
-    -webkit-animation: blink-2 0.9s infinite both;
-    animation: blink-2 0.9s infinite both;
 }
-
-@-webkit-keyframes blink-2 {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes blink-2 {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
 #nav1:hover {
     background: rgba(19, 230, 82, 0.4);
